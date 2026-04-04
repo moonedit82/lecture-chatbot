@@ -1,0 +1,8 @@
+.env
+api key*.txt
+__pycache__/
+*.pyc
+ngrok.exe
+ngrok.zip
+ngrok.log
+server.log
