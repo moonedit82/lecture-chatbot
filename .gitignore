@@ -2,7 +2,9 @@
 api key*.txt
 __pycache__/
 *.pyc
+*.pyo
 ngrok.exe
 ngrok.zip
 ngrok.log
 server.log
+*.log
