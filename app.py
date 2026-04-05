@@ -47,8 +47,12 @@ SYSTEM_PROMPT = f"""당신은 강의 자료 기반 Q&A 챗봇입니다.
 {DOCUMENT_CONTENT}
 """
 
+TEMPLATE = os.environ.get("TEMPLATE_STYLE", "pinterest")
+
 @app.route("/")
 def index():
+    if TEMPLATE == "classic":
+        return render_template("index_classic.html")
     return render_template("index.html")
 
 @app.route("/chat", methods=["POST"])
